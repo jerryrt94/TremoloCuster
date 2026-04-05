@@ -19,8 +19,8 @@ TremoloCusterAudioProcessor::TremoloCusterAudioProcessor()
 #endif
                   .withOutput ("Output", juce::AudioChannelSet::stereo(), true)
 #endif
-                  ), // <--- IMPORTANTE: Se añade una coma aquí
-apvts (*this, nullptr, "Parameters", createParameterLayout()) // <--- INICIALIZAMOS EL APVTS
+                  ),
+apvts (*this, nullptr, "Parameters", createParameterLayout())
 #endif
 {
 }
