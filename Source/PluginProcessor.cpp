@@ -165,7 +165,6 @@ void TremoloCusterAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer
         float lfoValue = std::sin(currentPhase);
         float unipolarLFO = (lfoValue + 1.0f) * 0.5f;
         
-        // Usamos currentDepth en lugar de la variable vieja 'depth'
         float currentGain = 1.0f - (currentDepth * unipolarLFO);
         
         for (int channel = 0; channel < totalNumInputChannels; ++channel)
