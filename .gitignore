@@ -1,0 +1,5 @@
+# Archivos de compilación
+Builds/
+
+# Archivos de sistema
+.DS_Store
